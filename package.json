@@ -1,0 +1,58 @@
+{
+  "name": "frontend",
+  "homepage": "http://localhost:3000",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@sbmdkl/nepali-datepicker-reactjs": "^1.2.1",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
+    "classnames": "^2.2.6",
+    "draft-js": "^0.10.5",
+    "draftjs-to-html": "^0.8.4",
+    "formik": "^1.5.1",
+    "html-to-draftjs": "^1.4.0",
+    "lodash": "^4.17.11",
+    "nepali-datepicker-reactjs": "^1.1.5",
+    "nepali-number": "^1.0.3",
+    "node-sass": "4.14.1",
+    "query-string": "^6.4.0",
+    "react": "16.8",
+    "react-dom": "^16.8.5",
+    "react-draft-wysiwyg": "^1.13.2",
+    "react-helmet": "^5.2.0",
+    "react-icons": "^3.5.0",
+    "react-joyride": "^2.0.5",
+    "react-loading-skeleton": "^1.1.1",
+    "react-pose": "^4.0.8",
+    "react-recaptcha": "^2.3.10",
+    "react-redux": "^6.0.1",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.8",
+    "react-select": "^2.4.2",
+    "react-social-sharing": "^3.0.1",
+    "react-toastify": "^4.5.2",
+    "reactstrap": "^7.1.0",
+    "redux-starter-kit": "^0.4.3",
+    "source-map-explorer": "^1.8.0",
+    "strftime": "^0.10.1",
+    "yup": "^0.27.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "analyze": "source-map-explorer build/static/js/main.*"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "proxy": "http://localhost:8000"
+}

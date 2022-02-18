@@ -1,0 +1,11 @@
+.SecondNav .nav-item a {
+    color: #e1e2e4;
+    text-decoration: none;
+}
+
+.SecondNav .nav-item a:hover,  .SecondNav .nav-item a.active {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+}
+

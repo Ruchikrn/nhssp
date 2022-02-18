@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta');
+
+
+$font-size-base: 1.1rem;
+$font-family-base: 'Mukta', Roboto, sans-serif !important;
+$breadcrumb-padding-x:  0px;
+$breadcrumb-bg: white;
+
+
+$blue:    #007bff;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #e83e8c;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #28a745;
+$teal:    #20c997;
+$cyan:    #17a2b8;
+
+
+$primary:       $green;
+$success:       $blue;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+
+
+
+@media (min-width:768px) {
+    .md-sticky-filter {
+        position:sticky;
+        top: 0;
+        background: white;
+        z-index:100;
+        padding-bottom: 1rem;
+    }
+}
+
+
+@media (max-width:768px) {
+    .header-logo-container {
+        max-width: 70px;
+        overflow: hidden;
+    }
+}
+
+// https://stackoverflow.com/questions/36430816/bootstrap-4-card-deck-with-number-of-columns-based-on-viewport
+
+// Bootstrap 4 breakpoints & gutter
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+) !default;
+
+$grid-gutter-width: 30px !default;
+
+// number of cards per line for each breakpoint
+$cards-per-line: (
+    xs: 1,
+    sm: 1,
+    md: 2,
+    lg: 2,
+    xl: 2
+);
+
+@each $name, $breakpoint in $grid-breakpoints {
+    @media (min-width: $breakpoint) {
+        .card-deck .card {
+            flex: 0 0 calc(#{100/map-get($cards-per-line, $name)}% - #{$grid-gutter-width});
+        }
+    }
+}
+
