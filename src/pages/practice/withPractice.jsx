@@ -21,6 +21,7 @@ function withPractice(WrappedComponent, LoadingComponent=null) {
       axios.get(`/api/practices/${this.props.match.params.id}/`, { headers })
         .then(res => {
           this.setState({ loading: false, data: res.data })
+          console.log(res.data, 'res.data');
         })
     }
 
@@ -29,6 +30,7 @@ function withPractice(WrappedComponent, LoadingComponent=null) {
     }
     render() {
       if (!this.state.loading) {
+    
         return <WrappedComponent data={this.state.data} fetchData={this.fetchData}/>
       }
       
