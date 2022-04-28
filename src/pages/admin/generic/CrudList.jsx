@@ -18,7 +18,7 @@ class CrudList extends Component {
     rows: [],
     page: 1,
     pages: 1,
-    pageSize: 5,
+    pageSize: 50,
     count: 0,
     loading: false,
     errored: false,
